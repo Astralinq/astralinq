@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Astralinq</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="logo-container">
+                <h1>Astralinq</h1>
+                <div class="orbit-ring"></div>
+                <div class="orbit-ring delay-1"></div>
+                <div class="orbit-ring delay-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <span class="logo-text">Astralinq</span>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="features.html" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="plans.html" class="nav-link">Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="tel:+18885347653" class="btn-primary">
+                        <span>Get Connected</span>
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">Get In Touch</h1>
+                    <p class="page-subtitle">Ready to experience lightning-fast fiber internet? Let's connect you today.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Methods -->
+        <section class="contact-methods">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>Speak with our friendly team</p>
+                        <a href="tel:+18885347653" class="contact-link">(888) 534-7653</a>
+                        <span class="contact-hours">Mon-Sat: 8AM-8PM</span>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>Send us a message anytime</p>
+                        <a href="mailto:info@astralinq.com" class="contact-link">info@astralinq.com</a>
+                        <span class="contact-hours">24/7 Response</span>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Live Chat</h3>
+                        <p>Chat with support instantly</p>
+                        <a href="#" class="contact-link">Start Chat</a>
+                        <span class="contact-hours">24/7 Available</span>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>Come see us in person</p>
+                        <a href="#" class="contact-link">123 Tech Boulevard<br>Digital City, DC 12345</a>
+                        <span class="contact-hours">Mon-Fri: 9AM-6PM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Get Your Free Quote</h2>
+                        <p>Fill out the form below and we'll contact you within 24 hours with a personalized quote.</p>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Service Address *</label>
+                            <input type="text" id="address" name="address" placeholder="Enter your complete address" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="serviceType">Service Type</label>
+                                <select id="serviceType" name="serviceType">
+                                    <option value="residential">Residential</option>
+                                    <option value="business">Business</option>
+                                    <option value="enterprise">Enterprise</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredPlan">Preferred Plan</label>
+                                <select id="preferredPlan" name="preferredPlan">
+                                    <option value="">Select a plan</option>
+                                    <option value="essential">Essential (300 Mbps) - $49.99</option>
+                                    <option value="premium">Premium (500 Mbps) - $69.99</option>
+                                    <option value="ultimate">Ultimate (1000 Mbps) - $89.99</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your specific needs, preferred installation date, or any questions you have..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">I'd like to receive updates about new services and special offers</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a> *</label>
+                        </div>
+                        <button type="submit" class="btn-primary form-submit">
+                            <span>Get My Quote</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Areas -->
+        <section class="service-areas">
+            <div class="container">
+                <h2 class="section-title">Service Areas</h2>
+                <p class="section-subtitle">We're rapidly expanding our fiber network across the region</p>
+                <div class="areas-grid">
+                    <div class="area-card available">
+                        <div class="area-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Available Now</span>
+                        </div>
+                        <h4>Downtown District</h4>
+                        <p>Full fiber coverage with all plans available</p>
+                    </div>
+                    <div class="area-card available">
+                        <div class="area-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Available Now</span>
+                        </div>
+                        <h4>Riverside Heights</h4>
+                        <p>Complete fiber installation finished</p>
+                    </div>
+                    <div class="area-card available">
+                        <div class="area-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Available Now</span>
+                        </div>
+                        <h4>Tech Valley</h4>
+                        <p>Business and residential fiber ready</p>
+                    </div>
+                    <div class="area-card coming-soon">
+                        <div class="area-status">
+                            <i class="fas fa-clock"></i>
+                            <span>Coming Q2 2025</span>
+                        </div>
+                        <h4>Maple Grove</h4>
+                        <p>Currently under construction</p>
+                    </div>
+                    <div class="area-card coming-soon">
+                        <div class="area-status">
+                            <i class="fas fa-clock"></i>
+                            <span>Coming Q3 2025</span>
+                        </div>
+                        <h4>Oakwood Estates</h4>
+                        <p>Planned expansion area</p>
+                    </div>
+                    <div class="area-card planned">
+                        <div class="area-status">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Planned 2025</span>
+                        </div>
+                        <h4>Suburban Commons</h4>
+                        <p>In planning phase</p>
+                    </div>
+                </div>
+                <div class="area-note">
+                    <p><i class="fas fa-info-circle"></i> Don't see your area? Contact us to check availability and join our expansion waitlist.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Support -->
+        <section class="emergency-support">
+            <div class="container">
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="emergency-content">
+                        <h3>Need Immediate Support?</h3>
+                        <p>If you're experiencing service issues or have an emergency, our technical support team is available 24/7.</p>
+                        <div class="emergency-actions">
+                            <a href="tel:+18885347653" class="btn-emergency">
+                                <i class="fas fa-phone"></i>
+                                <span>Emergency Support</span>
+                            </a>
+                            <a href="#" class="btn-emergency secondary">
+                                <i class="fas fa-comments"></i>
+                                <span>Live Chat</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <i class="fas fa-satellite-dish"></i>
+                            </div>
+                            <span class="logo-text">Astralinq</span>
+                        </div>
+                        <p>Connecting you to the future of internet.</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="plans.html">Plans</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+18885347653">Call Us</a></li>
+                        <li><a href="mailto:support@astralinq.com">Email Support</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Astralinq. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

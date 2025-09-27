@@ -1,12 +1,24 @@
 // Preloader
 window.addEventListener('load', function() {
-    setTimeout(function() {
-        document.getElementById('preloader').style.opacity = '0';
-        setTimeout(function() {
-            document.getElementById('preloader').style.display = 'none';
-        }, 500);
-    }, 3000);
+    hidePreloader();
 });
+
+// Also hide preloader after 2 seconds regardless of load state
+setTimeout(function() {
+    hidePreloader();
+}, 2000);
+
+function hidePreloader() {
+    const preloader = document.getElementById('preloader');
+    if (preloader && preloader.style.display !== 'none') {
+        preloader.style.opacity = '0';
+        setTimeout(function() {
+            preloader.style.display = 'none';
+            // Ensure body is visible
+            document.body.style.overflow = 'auto';
+        }, 500);
+    }
+}
 
 // Mobile Navigation
 const hamburger = document.querySelector('.hamburger');
@@ -266,3 +278,124 @@ rippleStyle.textContent = `
     }
 `;
 document.head.appendChild(rippleStyle);
+
+// FAQ Functionality
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        const isActive = faqItem.classList.contains('active');
+        
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.classList.remove('active');
+        });
+        
+        // Open clicked item if it wasn't already active
+        if (!isActive) {
+            faqItem.classList.add('active');
+        }
+    });
+});
+
+// Chat functionality placeholder
+function openChat() {
+    alert('Live chat would open here. For now, please call (888) 534-7653 for immediate assistance.');
+}
+
+// Update the existing observer to handle new elements
+// Observe all animated elements
+document.addEventListener('DOMContentLoaded', function() {
+    const newAnimatedElements = document.querySelectorAll('.step, .security-feature, .business-card, .support-option, .faq-item, .offer-card');
+    
+    // Don't animate feature-items and stat-cards as they should be visible by default
+    newAnimatedElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+    
+    // Ensure about section elements are fully visible and not affected by any animations
+    const aboutElements = document.querySelectorAll('.feature-item, .stat-card, .about-story, .about-visual');
+    aboutElements.forEach(el => {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+        el.style.visibility = 'visible';
+        el.style.display = el.style.display || 'flex'; // Ensure display is set for feature-items
+    });
+    
+    // Force feature items to be visible
+    setTimeout(() => {
+        const featureItems = document.querySelectorAll('.feature-item');
+        featureItems.forEach(item => {
+            item.style.opacity = '1';
+            item.style.visibility = 'visible';
+            item.style.transform = 'translateY(0)';
+            item.classList.add('force-visible');
+        });
+    }, 100);
+});
+
+// Enhanced form submission
+document.querySelector('.contact-form')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(this);
+    const name = formData.get('name') || this.querySelector('input[type="text"]').value;
+    const email = formData.get('email') || this.querySelector('input[type="email"]').value;
+    const message = formData.get('message') || this.querySelector('textarea').value;
+    
+    // Simple validation
+    if (!name || !email || !message) {
+        alert('Please fill in all fields.');
+        return;
+    }
+    
+    // Simulate form submission
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    
+    submitBtn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
+    submitBtn.disabled = true;
+    
+    setTimeout(() => {
+        alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+        this.reset();
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+    }, 2000);
+});
+
+// New Navigation Toggle for Additional Pages
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+
+    // Handle navbar background on scroll for new header
+    const header = document.querySelector('.header');
+    if (header) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.style.background = 'rgba(10, 10, 10, 0.95)';
+            } else {
+                header.style.background = 'rgba(10, 10, 10, 0.9)';
+            }
+        });
+    }
+});
