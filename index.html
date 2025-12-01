@@ -6,7 +6,16 @@
     <title>Astralinq - Premium Cable & Internet Services</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17399882016"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17399882016');
+</script>
 </head>
 <body>
     <!-- Preloader -->
@@ -27,13 +36,6 @@
         </div>
     </div>
 
-    <!-- Background Video -->
-    <video id="bg-video" autoplay muted loop>
-        <source src="mp4.mp4">
-        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    
     <!-- Parallax Stars -->
     <div class="stars" id="stars1"></div>
     <div class="stars" id="stars2"></div>
@@ -50,10 +52,11 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#plans" class="nav-link">Plans</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="plans.html" class="nav-link">Plans</a></li>
+                <li><a href="#business" class="nav-link">Business</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -65,23 +68,41 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="glitch" data-text="ASTRALINQ">ASTRALINQ</span>
-            </h1>
-            <p class="hero-subtitle">Experience Internet at the Speed of Light</p>
-            <p class="hero-description">Premium cable and internet services that connect you to the cosmos of possibilities<br>  (877) 999-1124</p>
-            <div class="hero-buttons">
-              <a href="tel:+18779991124"> <button class="btn-primary">
-                    <span>Explore Plans</span>
-                    <i class="fas fa-rocket"></i>
-                </button></a>
-            <a  href="tel:+18779991124">  <button class="btn-secondary">
-                    <span>Learn More</span>
-                    <i class="fas fa-info-circle"></i>
-                </button></a>
+        <!-- Background Video -->
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="mp4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="hero-container">
+            <!-- Left Side - Content -->
+            <div class="hero-content">
+                <h1 class="hero-title">Connect to the <span class="highlight">Future</span></h1>
+                <p class="hero-subtitle">Experience ultra-fast fiber internet with blazing speeds up to 1 Gigabit. Stream, game, and work without limits across our galaxy-wide network.</p>
+                <a href="tel:+18885347653">
+                    <button class="hero-cta-btn">
+                        <span>Start Your Journey</span>
+                        <i class="fas fa-rocket"></i>
+                    </button>
+                </a>
+            </div>
+            
+            <!-- Right Side - TV Structure -->
+            <div class="hero-tv-container">
+                <div class="tv-frame">
+                    <div class="tv-screen">
+                        <video class="tv-video" autoplay muted loop playsinline>
+                            <source src="mp4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="tv-stand">
+                        <div class="tv-base"></div>
+                    </div>
+                </div>
             </div>
         </div>
+        
         <div class="floating-objects">
             <div class="floating-satellite"></div>
             <div class="floating-planet"></div>
@@ -193,46 +214,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Astralinq</h2>
-                    <p>We're pioneers in connecting communities across the digital cosmos. With cutting-edge technology and stellar customer service, we bring the universe of possibilities directly to your doorstep.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>10M+</h3><h3>Million</h3>
-                            <p>Happy Customers</p>
-                        </div>
-                        <div class="stat">
-                            <h3>99.%</h3><h3>%</h3>
-                            <p>Uptime</p>
-                        </div>
-                        <div class="stat">
-                            <h3>24</h3><h3>/7</h3>
-                            <p>Support</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="orbit-system">
-                        <div class="orbit orbit-1">
-                            <div class="planet planet-1"></div>
-                        </div>
-                        <div class="orbit orbit-2">
-                            <div class="planet planet-2"></div>
-                        </div>
-                        <div class="orbit orbit-3">
-                            <div class="planet planet-3"></div>
-                        </div>
-                        <div class="sun"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Technology Section -->
     <section id="technology" class="technology">
         <div class="container">
@@ -414,6 +396,114 @@
         </div>
     </section>
 
+    <!-- Special Offers Section -->
+    <section id="offers" class="special-offers">
+        <div class="container">
+            <h2 class="section-title">Limited Time Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card main-offer">
+                    <div class="offer-badge">BEST VALUE</div>
+                    <div class="offer-content">
+                        <h3>Fiber 1000 Ultimate Package</h3>
+                        <div class="offer-subtitle">New Customer Special - Save $600/year</div>
+                        <div class="offer-price">
+                            <span class="original-price">$89.99</span>
+                            <span class="sale-price">$39.99</span>
+                            <span class="price-period">/month for 12 months</span>
+                        </div>
+                        
+                        <div class="offer-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>1000 Mbps Speed</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-wifi"></i>
+                                <span>Wi-Fi 6 Router</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Security Suite</span>
+                            </div>
+                        </div>
+                        
+                        <ul class="offer-features">
+                            <li><i class="fas fa-check"></i>1 Gigabit Symmetrical Speed</li>
+                            <li><i class="fas fa-check"></i>Free Professional Installation</li>
+                            <li><i class="fas fa-check"></i>Premium Wi-Fi 6 Router ($200 value)</li>
+                            <li><i class="fas fa-check"></i>24/7 Priority Technical Support</li>
+                            <li><i class="fas fa-check"></i>Unlimited Data & No Throttling</li>
+                            <li><i class="fas fa-check"></i>30-Day Money-Back Guarantee</li>
+                        </ul>
+                        
+                        <div class="offer-benefits">
+                            <div class="benefit-stat">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                            <div class="benefit-stat">
+                                <span class="stat-number">4.8/5</span>
+                                <span class="stat-label">Rating</span>
+                            </div>
+                        </div>
+                        
+                        <a href="tel:+18885347653">
+                            <button class="btn-primary offer-btn">
+                                <span>Claim Limited Offer</span>
+                                <i class="fas fa-rocket"></i>
+                            </button>
+                        </a>
+                        <p class="offer-disclaimer">*New customers only. Regular price $89.99/month after 12 months.</p>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <h3>Student Discount</h3>
+                        <div class="offer-discount">25% OFF</div>
+                        <p>Special pricing for students with valid student ID</p>
+                        <a href="tel:+18885347653">
+                            <button class="btn-outline">Learn More</button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <h3>Senior Discount</h3>
+                        <div class="offer-discount">20% OFF</div>
+                        <p>Exclusive savings for customers 65+ with qualifying plans</p>
+                        <a href="tel:+18885347653">
+                            <button class="btn-outline">Get Details</button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <h3>Refer a Friend</h3>
+                        <div class="offer-reward">$100 Credit</div>
+                        <p>Get $100 account credit for each friend you refer</p>
+                        <a href="tel:+18885347653">
+                            <button class="btn-outline">Start Referring</button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <h3>Bundle & Save</h3>
+                        <div class="offer-savings">Save $30/mo</div>
+                        <p>Internet + TV + Phone bundle packages available</p>
+                        <a href="tel:+18885347653">
+                            <button class="btn-outline">View Bundles</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
         <div class="container">
@@ -479,6 +569,266 @@
             </div>
         </div>
     </section>
+
+    <!-- Installation Process Section -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <h2 class="section-title">Simple Installation Process</h2>
+            <div class="installation-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Schedule Appointment</h3>
+                    <p>Book a convenient time slot online or call our team to schedule your installation</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Professional Setup</h3>
+                    <p>Our certified technicians handle everything from wiring to equipment configuration</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Instant Connection</h3>
+                    <p>Start enjoying blazing-fast internet and premium services immediately after setup</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our support team is always ready to help you get the most out of your connection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy Section -->
+    <section id="security" class="security">
+        <div class="container">
+            <h2 class="section-title">Your Digital Security Fortress</h2>
+            <div class="security-content">
+                <div class="security-features">
+                    <div class="security-feature">
+                        <div class="security-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Advanced Firewall Protection</h3>
+                        <p>Multi-layered security that blocks malicious traffic before it reaches your devices</p>
+                    </div>
+                    <div class="security-feature">
+                        <div class="security-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Encrypted Data Transmission</h3>
+                        <p>End-to-end encryption ensures your personal information stays private and secure</p>
+                    </div>
+                    <div class="security-feature">
+                        <div class="security-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Identity Protection</h3>
+                        <p>Real-time monitoring and alerts to protect against identity theft and fraud</p>
+                    </div>
+                    <div class="security-feature">
+                        <div class="security-icon">
+                            <i class="fas fa-virus"></i>
+                        </div>
+                        <h3>Malware Detection</h3>
+                        <p>Automatic scanning and removal of viruses, spyware, and other threats</p>
+                    </div>
+                </div>
+                <div class="security-visual">
+                    <div class="security-diagram">
+                        <div class="security-center">
+                            <i class="fas fa-home"></i>
+                            <span>Your Home</span>
+                        </div>
+                        <div class="security-layer layer-1">
+                            <div class="shield-icon"><i class="fas fa-shield"></i></div>
+                        </div>
+                        <div class="security-layer layer-2">
+                            <div class="shield-icon"><i class="fas fa-shield"></i></div>
+                        </div>
+                        <div class="security-layer layer-3">
+                            <div class="shield-icon"><i class="fas fa-shield"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Solutions Section -->
+    <section id="business" class="business">
+        <div class="container">
+            <h2 class="section-title">Enterprise Solutions</h2>
+            <div class="business-grid">
+                <div class="business-card">
+                    <div class="business-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Small Business</h3>
+                    <p>Reliable internet and phone solutions for growing businesses with up to 50 employees</p>
+                    <ul class="business-features">
+                        <li><i class="fas fa-check"></i>Dedicated bandwidth</li>
+                        <li><i class="fas fa-check"></i>Business-grade support</li>
+                        <li><i class="fas fa-check"></i>Static IP addresses</li>
+                        <li><i class="fas fa-check"></i>Cloud backup services</li>
+                    </ul>
+                    <a href="tel:+18885347653"><button class="btn-outline">Learn More</button></a>
+                </div>
+                <div class="business-card featured">
+                    <div class="business-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Enterprise</h3>
+                    <p>Scalable solutions for large organizations with custom infrastructure needs</p>
+                    <ul class="business-features">
+                        <li><i class="fas fa-check"></i>Fiber-optic connections</li>
+                        <li><i class="fas fa-check"></i>24/7 priority support</li>
+                        <li><i class="fas fa-check"></i>Service Level Agreements</li>
+                        <li><i class="fas fa-check"></i>Custom network design</li>
+                    </ul>
+                    <a href="tel:+18885347653"><button class="btn-primary">Get Quote</button></a>
+                </div>
+                <div class="business-card">
+                    <div class="business-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Remote Work</h3>
+                    <p>Optimized connectivity solutions for distributed teams and home offices</p>
+                    <ul class="business-features">
+                        <li><i class="fas fa-check"></i>VPN connectivity</li>
+                        <li><i class="fas fa-check"></i>Video conferencing optimization</li>
+                        <li><i class="fas fa-check"></i>Collaboration tools</li>
+                        <li><i class="fas fa-check"></i>Productivity monitoring</li>
+                    </ul>
+                    <a href="tel:+18885347653"><button class="btn-outline">Explore</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Center Section -->
+    <section id="support-center" class="support-center">
+        <div class="container">
+            <h2 class="section-title">Support Center</h2>
+            <div class="support-content">
+                <div class="support-options">
+                    <div class="support-option">
+                        <div class="support-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>24/7 Phone Support</h3>
+                        <p>Speak with a technical expert anytime</p>
+                        <a href="tel:+18885347653" class="support-link">Call (888) 534-7653</a>
+                    </div>
+                    <div class="support-option">
+                        <div class="support-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Live Chat</h3>
+                        <p>Get instant help with our chat support</p>
+                        <button class="support-link" onclick="openChat()">Start Chat</button>
+                    </div>
+                    <div class="support-option">
+                        <div class="support-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Knowledge Base</h3>
+                        <p>Find answers to common questions</p>
+                        <a href="#" class="support-link">Browse Articles</a>
+                    </div>
+                    <div class="support-option">
+                        <div class="support-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Tutorials</h3>
+                        <p>Step-by-step guides for setup and troubleshooting</p>
+                        <a href="#" class="support-link">Watch Videos</a>
+                    </div>
+                </div>
+                <div class="support-stats">
+                    <div class="support-stat">
+                        <h4>< 2min</h4>
+                        <p>Average Response Time</p>
+                    </div>
+                    <div class="support-stat">
+                        <h4>98%</h4>
+                        <p>First Call Resolution</p>
+                    </div>
+                    <div class="support-stat">
+                        <h4>4.9/5</h4>
+                        <p>Customer Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What internet speeds do you offer?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a range of speeds from 100 Mbps up to 1 Gigabit (1000 Mbps) to suit different needs and budgets. Our fiber-optic network ensures consistent speeds even during peak usage times.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a contract required?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer both contract and no-contract options. Our no-contract plans provide flexibility, while contract plans offer better pricing and additional benefits like free installation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does installation take?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard installation typically takes 2-4 hours. Our technicians will schedule a convenient time and ensure everything is working perfectly before they leave.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer business internet plans?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we have specialized business plans with dedicated bandwidth, static IP addresses, and priority support. Contact our business team for custom solutions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if I experience technical issues?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our 24/7 technical support team is always available to help. You can reach us by phone, chat, or email. Most issues can be resolved remotely within minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -493,7 +843,7 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Phone</h4>
-                            <a href="tel:+18779991124"> <p> (877) 999-1124</p></a>
+                            <a href="tel:+18885347653"> <p> (888) 534-7653</p></a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -527,31 +877,75 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-section footer-brand">
                     <div class="logo">
                         <div class="logo-icon">
                             <i class="fas fa-satellite"></i>
                         </div>
                         <span class="logo-text">ASTRALINQ</span>
                     </div>
-                    <p>Connecting you to the cosmos of possibilities</p>
+                    <p class="footer-tagline">Connecting you to the cosmos of possibilities</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-                <div class="footer-links">
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="plans.html">Internet Plans</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="contact.html">Get Support</a></li>
+                        <li><a href="#">Service Status</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
                     <h4>Legal</h4>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="terms.html">Terms & Conditions</a></li>
                         <li><a href="refund.html">Refund Policy</a></li>
+                        <li><a href="#">Acceptable Use</a></li>
                     </ul>
                 </div>
-               
             </div>
+
+            <div class="footer-divider"></div>
+
             <div class="footer-bottom">
                 <p>&copy; 2025 Astralinq. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Fallback to hide preloader in case of any issues
+        setTimeout(function() {
+            const preloader = document.getElementById('preloader');
+            if (preloader && preloader.style.display !== 'none') {
+                preloader.style.display = 'none';
+            }
+        }, 3000);
+    </script>
 </body>
 </html>
